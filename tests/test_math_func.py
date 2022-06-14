@@ -1,6 +1,5 @@
-import sys
 from src import math_func
-import pytest
+
 
 # @pytest.mark.number
 # @pytest.mark.skip(reason="No ejecutar esto")
@@ -8,10 +7,12 @@ def test_add():
     assert math_func.add(7, 3) == 10
     assert math_func.add(7) == 9
 
+
 # @pytest.mark.number
 def test_product():
     assert math_func.product(5, 5) == 25
     assert math_func.product(5) == 10
+
 
 # @pytest.mark.strings
 def test_add_strings():
@@ -19,6 +20,7 @@ def test_add_strings():
     assert result == 'Hello World'
     assert type(result) is str
     assert 'Hello' in result
+
 
 # @pytest.mark.strings
 def test_product_strings():
