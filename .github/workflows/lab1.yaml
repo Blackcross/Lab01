@@ -9,5 +9,6 @@ jobs:
       
       - name: ci_run
         run:
+          ADD requirements.txt ./
           pip install -r requirements.txt
           pytest tests/
