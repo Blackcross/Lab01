@@ -10,5 +10,4 @@ jobs:
       - name: ci_run
         run:
           pip install -r requirements.txt
-          pytest tests
-    
+          pytest tests/
